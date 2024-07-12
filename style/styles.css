@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .buttons {
+    display: flex;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navbar .buttons li {
+    text-decoration: underline;
+    transition: transform 0.5s; 
+}
+
+.navbar .buttons li:hover {
+    transform: scale(1.1); 
+}
+
+.logo {
+    margin: 0;
+    font-size: 30px;
+    color: #333;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 10px;
+}
+
+.search {
+    margin: 30px 0 5px 0;
+    display: flex;
+    gap: 80px;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 400px;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos do cronômetro */
+
+.stopwatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: black;
+    color: grey;
+    right: 0;
+    top: 100px;
+    margin: 0;
+    transition: right 0.5s ease; 
+}
+
+.hide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    background-color: grey;
+    color: black;
+    height: 100%;
+    height: 120px;
+}
+
+.hide:hover {
+    color: white;
+    background-color: black;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+.stopwatch h1 {
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.stopwatch span {
+    margin: 0;
+    padding: 0;
+}
+
+.stopwatch .counter h3 {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+/* Estilos do carrossel */
+
+.carousel {
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.carouselBanners {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel h1 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel .item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .item img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Estilos da listagem de produtos */
+
+.products {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.products h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.productDescription {
+    padding: 5px 10px 0 10px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product .price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product .priceContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy {
+    background-color: black;
+    color: white;
+    margin: 20px 0;
+    border-radius: 25px;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.5s; 
+}
+
+.buy:hover {
+    background-color: orange;
+    border: orange;
+    color: black;
+    transform: scale(1.1); 
+}
+
+/* Estilos do rodapé */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footerContainer {
+    display: flex;
+}
+
+.contact-info,
+.social-links {
+    flex: 1;
+}
+
+.contact-info h3,
+.social-links h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.contact-info p,
+.social-links a {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 5px;
+}

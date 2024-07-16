@@ -11,28 +11,52 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="search">
-                <h1 class="logo">ACTIVE FIT</h1>
-                <form class="search-form">
-                    <input type="text" placeholder="Buscar...">
-                    <button type="submit">Buscar</button>
-                </form>
+            <div class="navbar-container">
+                <div class="navbar-info">
+                    <h1 class="logo">ACTIVE FIT</h1>
+                    <div class="" id="buttons">
+                        <ul class="buttons">
+                            <li><a href="">OFERTAS</a></li>
+                            <li>|</li>
+                            <li><a href="">ROUPAS</a></li>
+                            <li>|</li>
+                            <li><a href="">CALÇADOS</a></li>
+                            <li>|</li>
+                            <li><a href="">COLEÇÃO DE INVERNO 2024</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="navbar-icons">
+                    <a href="#">
+                        <img class="nav-icon" src="./assets/icons/heart-regular.svg"> </img>
+                    </a>
+                    <a href="#">
+                        <img class="nav-icon" src="./assets/icons/shopping-cart-solid.svg"> </img>
+                    </a>
+                </div>
             </div>
-            <div class="">
-                <ul class="buttons">
-                    <li><a href="">OFERTAS</a></li>
-                    <li>|</li>
-                    <li><a href="">ROUPAS</a></li>
-                    <li>|</li>
-                    <li><a href="">CALÇADOS</a></li>
-                    <li>|</li>
-                    <li><a href="">COLEÇÃO DE INVERNO 2024</a></li>
-                </ul>
+
+            <div class="hamburguer" id="hamburguer">
+                <a href="#" onclick="toggleHamburguerMenu()">
+                    <img class="hamburguer-button" src="./assets/icons/bars-solid.svg"> </img>
+                </a>
             </div>
         </nav>
+        <div class="hamburguerMenu" id="">
+            <div class="" id="hamburguerMenu">
+                <ul class="buttons">
+                    <li><a href="#">OFERTAS</a></li>
+                    <li><a href="#">ROUPAS</a></li>
+                    <li><a href="#">CALÇADOS</a></li>
+                    <li><a href="#">COLEÇÃO DE INVERNO 2024</a></li>
+                </ul>
+            </div>
+        </div>
+
     </header>
 
-    <div class="stopwatch" id="stopwatch">
+    <!-- <div class="stopwatch" id="stopwatch">
         <div class="counter">
             <a class="hide" id="arrow" href="#" onclick="showAndHide()">></a>
         </div>
@@ -43,14 +67,13 @@
                 <h3 id="relogio-digital"></h3>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <main>
         <section class="carousel">
             <div class="container">
                 <h1>Destaque da Semana</h1>
                 <div class="carouselBanners" id="carouselBanners">
-                    <p>teste</p>
                     <!-- Carousel aqui -->
                     <div class="item" id="banner1">
                         <img src="/assets/banner1.jpg" alt="Produto 1">

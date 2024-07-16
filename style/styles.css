@@ -32,9 +32,28 @@ header {
 
 .navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-info {
+    display: flex;
+    flex-direction: column;
+    align-items: space;
+}
+
+.navbar .navbar-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .navbar-icons .nav-icon {
+    height: 30px;
 }
 
 .navbar .buttons {
@@ -50,46 +69,31 @@ header {
 
 .navbar .buttons li {
     text-decoration: underline;
-    transition: transform 0.5s; 
+    transition: transform 0.5s;
 }
 
 .navbar .buttons li:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .logo {
-    margin: 0;
+    display: flex;
     font-size: 30px;
     color: #333;
     font-family: "Oswald", sans-serif;
     letter-spacing: 10px;
-}
-
-.search {
     margin: 30px 0 5px 0;
-    display: flex;
     gap: 80px;
 }
 
-.search-form {
-    display: flex;
+/* estilos do menu hamburguer, responsivo */
+
+.hamburguer {
+    display: none;
 }
 
-.search-form input[type="text"] {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-right: 5px;
-    width: 400px;
-}
-
-.search-form button {
-    padding: 8px 12px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+#hamburguerMenu {
+    display: none;
 }
 
 /* Estilos do cronômetro */
@@ -104,7 +108,7 @@ header {
     right: 0;
     top: 100px;
     margin: 0;
-    transition: right 0.5s ease; 
+    transition: right 0.5s ease;
 }
 
 .hide {
@@ -256,14 +260,14 @@ header {
     width: 300px;
     height: 50px;
     cursor: pointer;
-    transition: transform 0.5s; 
+    transition: transform 0.5s;
 }
 
 .buy:hover {
     background-color: orange;
     border: orange;
     color: black;
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 /* Estilos do rodapé */
@@ -298,4 +302,29 @@ footer {
 .social-links a {
     display: block;
     margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: flex; 
+        gap: 100px;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburguer {
+        display: block;
+        width: 30px;
+    }
+
+    #buttons {
+        display: none;
+    }
+
+    #hamburguerMenu {
+        display: none;
+    }
 }

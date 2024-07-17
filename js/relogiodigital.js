@@ -24,10 +24,6 @@ function atualizarRelogioDigital() {
     }
 }
 
-// setInterval(atualizarRelogioDigital, 1000);
-setInterval(carouselFunction, 5000);
-
-
 function showAndHide() {
     if (stopwatch.style.right === '-28%') {
         stopwatch.style.right = '0px';
@@ -38,25 +34,4 @@ function showAndHide() {
     }
 }
 
-function carouselFunction() {
-    const carouselBanners = document.getElementById('carouselBanners')
-
-    const banner1 = document.getElementById('banner1');
-    const banner2 = document.getElementById('banner2');
-    const banner3 = document.getElementById('banner3');
-
-    const posicaobanner1 = banner1.style.position;
-
-    carouselBanners.style.left = '-1000px';
-    console.log(posicaobanner1)
-}
-
-function toggleHamburguerMenu() {
-    const hamburguerMenu = document.getElementById('hamburguerMenu');
-
-    if (hamburguerMenu.style.display == 'flex') {
-        hamburguerMenu.style.display = 'none';
-    } else {
-        hamburguerMenu.style.display = 'flex';
-    }
-}
+setInterval(atualizarRelogioDigital, 1000);

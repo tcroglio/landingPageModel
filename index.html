@@ -56,7 +56,7 @@
 
     </header>
 
-    <!-- <div class="stopwatch" id="stopwatch">
+    <div class="stopwatch" id="stopwatch">
         <div class="counter">
             <a class="hide" id="arrow" href="#" onclick="showAndHide()">></a>
         </div>
@@ -67,27 +67,44 @@
                 <h3 id="relogio-digital"></h3>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <main>
         <section class="carousel">
             <div class="container">
                 <h1>Destaque da Semana</h1>
-                <div class="carouselBanners" id="carouselBanners">
-                    <!-- Carousel aqui -->
-                    <div class="item" id="banner1">
-                        <img src="/assets/banner1.jpg" alt="Produto 1">
+                <div class="carousel-container" style="display: flex; ">
+                    <!-- botão aqui  -->
+                    <div style="height: 390px; display: flex; align-items: center;">
+                        <button class="prev-button" style="position: relative; left: 30px; height: 50px;">
+                            < </button>
                     </div>
-                    <div class="item" id="banner2">
-                        <img src="/assets/banner2.jpg" alt="Produto 1">
+
+                    <div class="carouselBanners" id="carouselBanners">
+                        <!-- Carousel aqui -->
+                        <div class="item" id="banner1">
+                            <img src="/assets/banner1.jpg" alt="Produto 1">
+                        </div>
+                        <div class="item" id="banner2">
+                            <img src="/assets/banner2.jpg" alt="Produto 1">
+                        </div>
+                        <div class="item" id="banner3">
+                            <img src="/assets/banner3.jpg" alt="Produto 1">
+                        </div>
                     </div>
-                    <div class="item" id="banner3">
-                        <img src="/assets/banner3.jpg" alt="Produto 1">
+
+                    <!-- botão aqui -->
+                    <div style="height: 390px; display: flex; align-items: center;">
+                        <button class="next-button" style="position: relative; left: -30px; height: 50px;">
+                            >
+                        </button>
                     </div>
                 </div>
-                <div class="align">
-                    <button class="buy">VER SOBRE</button>
-                </div>
+            </div>
+
+            <div class="align">
+                <button class="buy">VER SOBRE</button>
+            </div>
             </div>
         </section>
 
@@ -150,6 +167,18 @@
                 </div>
             </div>
         </section>
+
+        <section class="form-contact-container">
+            <div class="form-contact">
+                <h2>Entre em contato conosco!</h2>
+                <form action="https://formsubmit.co/your@email.com" method="POST">
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <button type="submit">Send</button>
+               </form>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -173,7 +202,9 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/hamburguer.js"></script>
+    <script src="/js/relogiodigital.js"></script>
 </body>
 
 </html>

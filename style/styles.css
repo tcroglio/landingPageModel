@@ -304,9 +304,36 @@ footer {
     margin-bottom: 5px;
 }
 
+.form-contact-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.products h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.form-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width: 600px) {
     .navbar {
-        display: flex; 
+        display: flex;
         gap: 100px;
     }
 
@@ -326,5 +353,25 @@ footer {
 
     #hamburguerMenu {
         display: none;
+        justify-content: center;
     }
+
+    #hamburguerMenu .buttons {
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        gap: 10px;
+        font-family: "Oswald", sans-serif;
+        font-size: large;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hamburguerMenu .buttons li {
+        text-decoration: underline;
+        transition: transform 0.5s;
+    }
+
 }

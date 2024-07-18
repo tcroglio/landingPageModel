@@ -1,4 +1,4 @@
-const stopwatch = document.getElementById('stopwatch');
+const stopwatch = document.getElementById('stopwatchContainer');
 const arrow = document.getElementById('arrow');
 const diaInaug = 18;
 const horaInaug = 19;
@@ -25,12 +25,12 @@ function atualizarRelogioDigital() {
 }
 
 function showAndHide() {
-    if (stopwatch.style.right === '-28%') {
-        stopwatch.style.right = '0px';
+    if (stopwatch.style.display === 'none') {
+        stopwatch.style.display = 'flex';
         arrow.textContent = '>';
     } else {
         arrow.textContent = '<';
-        stopwatch.style.right = '-28%';
+        stopwatch.style.display = 'none';
     }
 }
 

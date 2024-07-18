@@ -14,13 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function nextSlide() {
         slideIndex = (slideIndex + 1) % totalSlides;
         showSlide(slideIndex);
-        console.log('nextSlide')
     }
 
     function prevSlide() {
         slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
         showSlide(slideIndex);
-        console.log('prevSlide')
     }
 
     setInterval(nextSlide, 5000);

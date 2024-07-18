@@ -108,7 +108,7 @@ header {
     right: 0;
     top: 100px;
     margin: 0;
-    transition: right 0.5s ease;
+    z-index: 1000;
 }
 
 .hide {
@@ -162,11 +162,6 @@ header {
     padding: 20px;
 }
 
-.carouselBanners {
-    display: flex;
-    overflow: hidden;
-}
-
 .carousel h1 {
     margin: 0 0 10px 0;
     font-size: 40px;
@@ -178,10 +173,7 @@ header {
 }
 
 .carousel .item {
-    flex: 0 0 auto;
     margin-right: 10px;
-    width: 100%;
-    height: 100%;
 }
 
 .carousel .item img {
@@ -270,6 +262,61 @@ header {
     transform: scale(1.1);
 }
 
+.form-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.form-contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contact label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form-contact input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-contact button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-contact button:hover {
+    background-color: gold;
+}
+
+
 /* Estilos do rodapé */
 
 footer {
@@ -280,11 +327,7 @@ footer {
 
 .footerContainer {
     display: flex;
-}
-
-.contact-info,
-.social-links {
-    flex: 1;
+    justify-content: center;
 }
 
 .contact-info h3,
@@ -299,79 +342,31 @@ footer {
     margin-bottom: 10px;
 }
 
+.contact-info span:hover {
+    color: blue;
+    cursor: pointer;
+}
+
 .social-links a {
     display: block;
     margin-bottom: 5px;
 }
 
-.form-contact-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.social-links li:hover a:hover {
+    color: blue;
 }
+
 
 .products h2 {
     margin-top: 0;
     font-size: 20px;
 }
 
-.form-contact {
+/* rodapé 2 */
+
+.rights {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-}
-
-.form-contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-@media screen and (max-width: 600px) {
-    .navbar {
-        display: flex;
-        gap: 100px;
-    }
-
-    .navbar-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hamburguer {
-        display: block;
-        width: 30px;
-    }
-
-    #buttons {
-        display: none;
-    }
-
-    #hamburguerMenu {
-        display: none;
-        justify-content: center;
-    }
-
-    #hamburguerMenu .buttons {
-        padding: 0;
-        text-decoration: none;
-        list-style: none;
-        gap: 10px;
-        font-family: "Oswald", sans-serif;
-        font-size: large;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #hamburguerMenu .buttons li {
-        text-decoration: underline;
-        transition: transform 0.5s;
-    }
-
+    justify-content: space-around;
+    background-color: black;
+    color: white;
 }

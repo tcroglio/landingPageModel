@@ -1,0 +1,113 @@
+@media screen and (max-width: 600px) {
+    
+    .stopwatch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: black;
+        color: grey;
+        right: 0;
+        top: 100px;
+        margin: 0;
+        z-index: 1000;
+    }
+
+    .hide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        background-color: grey;
+        color: black;
+    }
+
+    .hide:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        margin: 15px 0;
+    }
+
+    .stopwatch h1 {
+        font-family: "Oswald", sans-serif;
+        padding: 0;
+        margin: 0;
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+
+    .stopwatch span {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .stopwatch .counter h3 {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 15px;
+    }
+
+
+    
+
+
+    .item img {
+        height: 300px;
+    }
+
+    .carousel {
+        padding: 0;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 100px;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburguer {
+        display: block;
+        width: 30px;
+    }
+
+    #buttons {
+        display: none;
+    }
+
+    #hamburguerMenu {
+        display: none;
+        justify-content: center;
+    }
+
+    #hamburguerMenu .buttons {
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        gap: 10px;
+        font-family: "Oswald", sans-serif;
+        font-size: large;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hamburguerMenu .buttons li {
+        text-decoration: underline;
+        transition: transform 0.5s;
+    }
+
+}

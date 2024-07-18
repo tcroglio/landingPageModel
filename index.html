@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACTIVE FIT</title>
-    <link rel="stylesheet" href="/style/styles.css">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/styles-small.css">
+    <link rel="stylesheet" href="./style/styles-medium.css">
+    <link rel="stylesheet" href="./style/styles-large.css">
 </head>
 
 <body>
@@ -60,7 +63,7 @@
         <div class="counter">
             <a class="hide" id="arrow" href="#" onclick="showAndHide()">></a>
         </div>
-        <div class="flex">
+        <div class="flex" id="stopwatchContainer">
             <h1>INAUGURAÇÃO DA LOJA</h1>
             <span>faltam apenas...</span>
             <div class="counter">
@@ -83,13 +86,13 @@
                     <div class="carouselBanners" id="carouselBanners">
                         <!-- Carousel aqui -->
                         <div class="item" id="banner1">
-                            <img src="/assets/banner1.jpg" alt="Produto 1">
+                            <img src="./assets/banner1.jpg" alt="Produto 1">
                         </div>
                         <div class="item" id="banner2">
-                            <img src="/assets/banner2.jpg" alt="Produto 1">
+                            <img src="./assets/banner2.jpg" alt="Produto 1">
                         </div>
                         <div class="item" id="banner3">
-                            <img src="/assets/banner3.jpg" alt="Produto 1">
+                            <img src="./assets/banner3.jpg" alt="Produto 1">
                         </div>
                     </div>
 
@@ -114,7 +117,7 @@
                 <div class="product-list">
                     <div class="product">
                         <a href="#">
-                            <img src="/assets/produto1.jpeg" alt="Produto 1">
+                            <img src="./assets/produto1.jpeg" alt="Produto 1">
                         </a>
                         <div class="productDescription">
                             <h3>Camiseta DRYFIT Nike</h3>
@@ -130,7 +133,7 @@
                     </div>
                     <div class="product">
                         <a href="#">
-                            <img src="/assets/produto2.jpeg" alt="Produto 2">
+                            <img src="./assets/produto2.jpeg" alt="Produto 2">
                         </a>
                         <div class="productDescription">
                             <h3>Camisa Nike DRY-FIT Park Feminina</h3>
@@ -149,7 +152,7 @@
                     </div>
                     <div class="product">
                         <a href="#">
-                            <img src="/assets/produto3.jpeg" alt="Produto 3">
+                            <img src="./assets/produto3.jpeg" alt="Produto 3">
                         </a>
                         <div class="productDescription">
                             <h3>Tenis Nike Air Max Masculino</h3>
@@ -170,15 +173,16 @@
 
         <section class="form-contact-container">
             <div class="form-contact">
-                <h2>Entre em contato conosco!</h2>
-                <form action="https://formsubmit.co/your@email.com" method="POST">
-                    <input type="text" name="name" required>
-                    <input type="email" name="email" required>
-                    <button type="submit">Send</button>
-               </form>
+                <h2>Receba as novidades da loja!</h2>
+                <form action="https://formsubmit.co/f24b6c459c0206a79e46c1f1059df8de" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" placeholder="Insira seu nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Insira seu email" required>
+                    <button type="submit">QUERO RECEBER AS NOVIDADES</button>
+                </form>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -186,9 +190,10 @@
             <div class="footerContainer">
                 <div class="contact-info">
                     <h2>Entre em Contato</h2>
-                    <p>Endereço: Outlet - Rua Rincão, 505 Shopping Platinum - Rincão, Novo Hamburgo - RS, 93310-460</p>
+                    <p>Endereço: Outlet - Rua Rincão, 505 Shopping Platinum - <br> Rincão, Novo Hamburgo - RS, 93310-460
+                    </p>
                     <p>Telefone: (51) 3303-3812</p>
-                    <p>Email: contato@activefit.com.br</p>
+                    <p>Email: <span> contato@activefit.com.br </span> </p>
                 </div>
                 <div class="social-links">
                     <h2>Siga-nos</h2>
@@ -200,11 +205,20 @@
                 </div>
             </div>
         </div>
-    </footer>
+        </footer>
+    <div class="rights">
+        <div>
+            <p> &copy; All rights reserved. </p>  
+        </div>
 
-    <script src="/js/carousel.js"></script>
-    <script src="/js/hamburguer.js"></script>
-    <script src="/js/relogiodigital.js"></script>
+        <div>
+            <p>Desenvolvido por: Tiago Roglio</p>
+        </div>
+    </div>
+
+    <script src="./js/carousel.js"></script>
+    <script src="./js/hamburguer.js"></script>
+    <script src="./js/relogiodigital.js"></script>
 </body>
 
 </html>

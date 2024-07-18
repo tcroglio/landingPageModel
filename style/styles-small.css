@@ -1,5 +1,18 @@
 @media screen and (max-width: 600px) {
     
+    .carousel .container {
+        background-color: #fff;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
     .stopwatch {
         display: flex;
         align-items: center;
@@ -56,18 +69,6 @@
         font-size: 15px;
     }
 
-
-    
-
-
-    .item img {
-        height: 300px;
-    }
-
-    .carousel {
-        padding: 0;
-    }
-
     .navbar {
         display: flex;
         gap: 100px;
@@ -108,6 +109,18 @@
     #hamburguerMenu .buttons li {
         text-decoration: underline;
         transition: transform 0.5s;
+    }
+
+    .carousel h1 {
+        font-size: 25px;
+    }
+
+    .carousel .item {
+        width: 300px;
+    }
+
+    .carousel .item {
+        width: 360px;
     }
 
 }
